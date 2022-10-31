@@ -1,0 +1,521 @@
+/*  */
+html{font-size: 62,5%;}
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+.grilla{
+  display: grid;
+  grid-template-rows:  90px 70px 500px 225px 225px 225px 100px;
+  grid-column: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr    ;
+  grid-template-areas:
+  "logo logo titulo titulo titulo titulo titulo busca busca busca "
+  "menu menu menu menu menu menu menu menu menu menu "
+  "grantexto  grantexto  grantexto  grantexto  granimagen granimagen granimagen granimagen granimagen granimagen "
+  "carnetex carnetex carnetex carnetex carnetex carnetex carneimg carneimg carneimg carneimg "
+  "pastatex pastatex pastatex pastatex pastatex pastatex pastaimg pastaimg pastaimg pastaimg "
+  "verduratex verduratex verduratex verduratex verduratex verduratex verduraimg verduraimg verduraimg verduraimg "
+  "pie pie pie pie pie pie pie pie pie pie ";
+
+  }
+  .containerlogo{
+    grid-area: logo;
+    /* border: solid black; */
+    display: inline;
+    background-color: blue;
+  }
+  
+  .containertitulo{
+    grid-area: titulo;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   align-content: center;
+    background-color: blue;
+    /* border: solid black; */
+  }
+  
+  .containerbusca{
+    grid-area: busca;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+  }
+  
+  .menu{
+    grid-area: menu;
+    background-color: rgb(231, 223, 240);
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .menu nav li{
+    display: inline;
+    padding: 20px;
+  }
+
+  .menu nav li a{
+  font-size: 20px;
+  text-decoration: solid;
+
+  }
+
+
+.textogrande{
+    grid-area: grantexto;
+    display: flex;
+    align-items:baseline;
+    align-content: center;
+    background-color: rgb(190, 142, 235);
+    width: 100%;
+   
+        
+
+}
+
+
+.ubicatexto{
+    /* border: solid black; */
+    height: 400px;
+    width: 0.6fr;
+    margin: 30px;
+}
+
+
+.imagengrande{
+    grid-area: granimagen;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color: rgb(190, 142, 235);
+}
+
+/* ------------------------------------------------------------------------------ */
+.textocarnesec{
+    grid-area: carnetex;        
+ }
+
+.divtextosec{
+    background-color: rgb(190, 142, 235);
+    width: 900px;
+    height: 225px;
+    /* border: solid black; */
+  }
+  
+  .sectionrextosec{
+    position: relative;
+    width: 80%;
+    left: 50px;
+    top:50px;
+   padding-right: 20px;
+  }
+  .linksec{
+    position: relative;
+    left: 50px;
+    top: 30px;
+  }
+
+  
+
+  .imagencarnesec{
+    grid-area:carneimg ;
+    display: flex;
+    justify-items: flex-start;
+    /* border: solid black; */
+    width:600px;
+    height: 225px;
+    background-color:rgb(190, 142, 235); 
+   
+
+  }
+  .imgsec{
+    position:relative ;
+    top: 30px;
+   /* border: solid black; */
+
+}
+.textopastasec{
+    grid-area: pastatex;        
+ }
+ .imagenpastasec{
+    grid-area:pastaimg ;
+    display: flex;
+    justify-items: flex-start;
+    /* border: solid black; */
+    width:600px;
+    height: 225px;
+    background-color:rgb(190, 142, 235); }
+
+   .textoverdurasec{
+    grid-area: verduratex;
+
+
+   }
+   .imagenverdurasec{
+    grid-area:verduraimg ;
+    display: flex;
+    justify-items: flex-start;
+    /* border: solid black; */
+    width:600px;
+    height: 225px;
+    background-color:rgb(190, 142, 235); }
+    
+/* ------------------------PPAL------------------PPAL-------------------------------------- */
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+
+/* -------------------------------------------------------------------------------------- */
+
+
+
+
+.grillasec{
+display: grid;
+grid-template-rows:  80px 50px 70px 200px 380px 380px 380px 80px;
+grid-column: 1fr 1fr 1fr;
+grid-template-areas:
+"logo titulo busca"
+" menu menu menu"
+"titulosec titulosec titulosec"
+"lista lista lista"
+"pri sec ter"
+"cuar quin sex"
+"sep oct nov"
+"foot foot foot";
+grid-row-gap: 1px;
+
+
+}
+
+
+
+/* ------------------Fila superior encabezado */
+.containerlogo{
+  grid-area: logo;
+  display: flex;
+  background-color: blue;
+}
+
+.containertitulo{
+  grid-area: titulo;
+  display: flex;
+ align-items: center;
+ justify-content: center;
+  background-color: blue;
+}
+
+.containerbusca{
+  grid-area: busca;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: blue;
+}
+
+.header{
+  height: 50px;
+  width: 150px;
+
+  border: solid black;
+  font-size: 10px;
+  }
+
+
+  }
+
+  .buscador{
+  height: 20px;
+  width: 100px;
+  background-color: brown;
+  border: solid black;
+  }
+
+
+
+
+/* -----------------Menu paginas secundarias----------------------------------------- */
+
+
+  .menusec{
+    grid-area: menu;
+    background-color: rgb(231, 223, 240);
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .menusec nav li{
+    display: inline;
+    padding: 20px;
+  }
+
+  .menusec nav li a{
+  font-size: 20px;
+  text-decoration: solid;
+
+  }
+
+
+
+
+
+
+
+
+/* -----------------Titulo secundario----------------------- */
+
+.containersubtitulo{
+  grid-area: titulosec;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  /* background-color: cornflowerblue; */
+  background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+              linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+              linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+
+  }
+
+
+/* ----------------bloque con lsta de recetas */
+
+  .listarecetas{
+    grid-area: lista;
+    background-color: blueviolet;
+    /* background: linear-gradient(217deg, rgba(70, 153, 18, 0.8), rgba(18, 34, 3, 0) 70.71%),
+              linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+              linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%); */
+  }
+
+
+  .lista{
+  height: 150px;
+  width: 300px;
+  /* background-color: rgb(43, 29, 96); */
+  /* border: solid black; */
+  margin: 5px;
+  padding-top: 30px;
+  padding-left: 40px;
+  list-style: none;
+
+  }
+
+
+  .lista li{
+  padding: 10px;
+  font-size: 18px;
+  padding: 5px;
+  /* border: solid black; */
+  }
+
+
+  .lista li a{
+    color:white
+  }
+
+
+.comtainerlista{
+  grid-area: lista;
+
+}
+
+.cntainercarnepri{
+  grid-area: pricar;
+
+}
+
+.containercarnesec{
+  grid-area: seccar;
+
+
+}
+.containercarneter{
+  grid-area: tercar;
+
+}
+
+
+
+/* -----------------Formato de los textos e imágenes de los */
+.textosec{
+  height: 90px;
+  width: 250px;
+  padding-top: 15px;
+/* background-color: blue; */
+/* border: solid black; */
+}
+
+.imgsec{
+  height: 194px;
+  width: 259px;
+/* background-color: rgb(4, 255, 0); */
+/* border: solid black; */
+}
+
+h3{color: aliceblue;}
+h3 a{
+  color: black;
+}
+
+/* -------------Formato de los cuadros */
+
+.pri{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area: pri;
+  /* background-color: blueviolet; */
+  background: linear-gradient( blueviolet, rgb(212, 195, 227)  );
+
+}
+
+
+.sec{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+grid-area: sec;
+background: linear-gradient( blueviolet, rgb(212, 195, 227)  );
+/* background-color: blueviolet; */
+
+}
+
+.ter{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area: ter;
+  background: linear-gradient( blueviolet, rgb(212, 195, 227)  );
+  /* background-color: blueviolet; */
+}
+
+.cuar{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+grid-area:cuar ;
+/* background-color: rgb(207, 194, 229); */
+background: linear-gradient(rgb(195, 176, 227),rgb(216, 210, 228)  );
+}
+
+.quin{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area:quin ;
+  background-color: rgb(207, 194, 229);
+  background: linear-gradient(rgb(195, 176, 227),rgb(216, 210, 228)  );
+
+}
+
+
+.sex{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area:sex ;
+  background-color: rgb(207, 194, 229);
+  background: linear-gradient(rgb(195, 176, 227),rgb(216, 210, 228)  );
+
+}
+
+.sep{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area:sep ;
+  background-color: rgb(222, 219, 227);
+  background: linear-gradient(rgb(209, 189, 243),rgb(240, 239, 243)  );
+}
+
+.oct{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area:oct ;
+  background-color: rgb(222, 219, 227);
+  background: linear-gradient(rgb(209, 189, 243),rgb(240, 239, 243)  );
+}
+
+
+.nov{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area:nov ;
+  background-color: rgb(222, 219, 227);
+  background: linear-gradient(rgb(209, 189, 243),rgb(240, 239, 243)  );
+}
+
+.footer{
+grid-area: foot;
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: rgb(129, 210, 122);
+/* align-content: center; */
+justify-content:space-between;
+
+}
+h5{
+font-size: 1.3pc;
+color: brown;
+
+}
+.iconos{
+  display:flex;
+  width: 140px;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.footerppal{
+  grid-area: pie;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(129, 210, 122);
+  /* align-content: center; */
+  justify-content:space-between;
+  
+  }
+ .h5ppal{
+  font-size: 1.3pc;
+  color: brown;
+  
+  }
+  .iconosppal{
+    display:flex;
+    width: 140px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 10px;
+  }
