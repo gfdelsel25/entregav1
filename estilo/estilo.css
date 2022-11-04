@@ -16,10 +16,11 @@ html{font-size: 62,5%;}
   "logo logo titulo titulo titulo titulo titulo busca busca busca "
   "menu menu menu menu menu menu menu menu menu menu "
   "grantexto  grantexto  grantexto  grantexto  granimagen granimagen granimagen granimagen granimagen granimagen "
-  "carnetex carnetex carnetex carnetex carnetex carnetex carneimg carneimg carneimg carneimg "
-  "pastatex pastatex pastatex pastatex pastatex pastatex pastaimg pastaimg pastaimg pastaimg "
-  "verduratex verduratex verduratex verduratex verduratex verduratex verduraimg verduraimg verduraimg verduraimg "
+  "carnetex carnetex carnetex carnetex  carneimg carneimg carneimg carneimg carneimg carneimg "
+  "pastatex pastatex pastatex pastatex pastaimg pastaimg pastaimg pastaimg pastaimg pastaimg "
+  "verduratex verduratex verduratex verduratex verduraimg verduraimg verduraimg verduraimg verduraimg verduraimg "
   "pie pie pie pie pie pie pie pie pie pie ";
+
 
   }
   .containerlogo{
@@ -59,6 +60,7 @@ html{font-size: 62,5%;}
   .menu nav li{
     display: inline;
     padding: 20px;
+    
   }
 
   .menu nav li a{
@@ -71,8 +73,7 @@ html{font-size: 62,5%;}
 .textogrande{
     grid-area: grantexto;
     display: flex;
-    align-items:baseline;
-    align-content: center;
+    align-items:center;
     background-color: rgb(190, 142, 235);
     width: 100%;
    
@@ -83,9 +84,8 @@ html{font-size: 62,5%;}
 
 .ubicatexto{
     /* border: solid black; */
-    height: 400px;
-    width: 0.6fr;
-    margin: 30px;
+    height:fit-content;
+    padding: 30px;
 }
 
 
@@ -98,76 +98,92 @@ html{font-size: 62,5%;}
     background-color: rgb(190, 142, 235);
 }
 
+.imggran{
+width: 590px;
+height: 500px;
+
+}
+
 /* ------------------------------------------------------------------------------ */
 .textocarnesec{
-    grid-area: carnetex;        
+    grid-area: carnetex; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-start;
+    justify-items: center;
+    background-color: rgb(190, 142, 235);
+
  }
 
-.divtextosec{
-    background-color: rgb(190, 142, 235);
-    width: 900px;
-    height: 225px;
-    /* border: solid black; */
-  }
   
-  .sectionrextosec{
-    position: relative;
-    width: 80%;
-    left: 50px;
-    top:50px;
-   padding-right: 20px;
-  }
-  .linksec{
-    position: relative;
-    left: 50px;
-    top: 30px;
-  }
-
-  
-
   .imagencarnesec{
     grid-area:carneimg ;
     display: flex;
     justify-items: flex-start;
     /* border: solid black; */
-    width:600px;
-    height: 225px;
     background-color:rgb(190, 142, 235); 
    
 
   }
-  .imgsec{
-    position:relative ;
-    top: 30px;
-   /* border: solid black; */
 
-}
 .textopastasec{
-    grid-area: pastatex;        
+    grid-area: pastatex;      
+    display: flex; 
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+    justify-items: center;
+    background-color: rgb(190, 142, 235);
+ 
+   
  }
  .imagenpastasec{
     grid-area:pastaimg ;
     display: flex;
     justify-items: flex-start;
     /* border: solid black; */
-    width:600px;
-    height: 225px;
     background-color:rgb(190, 142, 235); }
 
    .textoverdurasec{
     grid-area: verduratex;
+    display: flex; 
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+    justify-items: center;
+    background-color: rgb(190, 142, 235);
 
+    }
 
-   }
    .imagenverdurasec{
     grid-area:verduraimg ;
     display: flex;
     justify-items: flex-start;
-    /* border: solid black; */
-    width:600px;
-    height: 225px;
     background-color:rgb(190, 142, 235); }
-    
+
+    .sectiontextosec{
+      margin-left: 50px;
+      margin-right: auto;
+      padding-right: 50px;
+      width:auto;
+      
+     }
+   
+     .linksec{
+      padding-left: 50px;
+      padding-bottom: 15px;
+      padding-top: 30px;
+   
+     }
+   
+     .imgsec{
+      position:relative ;
+      top: 30px;
+      height: 159px;
+      width: 259px;
+     /* border: solid black; */
+  
+  }
 /* ------------------------PPAL------------------PPAL-------------------------------------- */
 
 
@@ -188,7 +204,7 @@ html{font-size: 62,5%;}
 .grillasec{
 display: grid;
 grid-template-rows:  80px 50px 70px 200px 380px 380px 380px 80px;
-grid-column: 1fr 1fr 1fr;
+grid-template-columns: 1fr 1fr 1fr;
 grid-template-areas:
 "logo titulo busca"
 " menu menu menu"
@@ -299,6 +315,7 @@ grid-row-gap: 1px;
 
   .listarecetas{
     grid-area: lista;
+    display: flex;
     background-color: blueviolet;
     /* background: linear-gradient(217deg, rgba(70, 153, 18, 0.8), rgba(18, 34, 3, 0) 70.71%),
               linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
@@ -519,3 +536,100 @@ color: brown;
     justify-content: space-between;
     padding-bottom: 10px;
   }
+/* -------------------TIPS--------------------- */
+
+/* responsividad */
+/* ------------------------------------------ */
+@media screen and (max-with:768px) {
+  .grillatablet{
+    grid-template-rows:  90px 70px 500px 225px 225px 225px 100px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "logo titulo titulo titulo busca "
+    "menu menu menu menu menu"
+    "grantexto  grantexto  grantexto  grantexto  grantexto "
+    "carnetex carnetex carnetex carnetex carnetex  "
+    "pastatex pastatex pastatex pastatex pastatex  "
+    "verduratex verduratex verduratex verduratex verduratex  "
+    "pie pie pie pie pie  ";
+    align-items: stretch; 
+     }
+ 
+    .imagengrande{
+      grid-area: granimagen;
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      display: none;
+
+    }
+
+    .imagencarnesec{
+      grid-area:carneimg ;
+      display: none;
+      background-color:rgb(190, 142, 235); 
+
+    }
+
+    .imgsec{
+      display: inline-block;
+      display: none; 
+
+    } 
+ 
+}
+
+/* ----------------Celular---------------------------------- */
+@media screen and (max-device-with:500px) {
+  .grillatablet{
+    grid-template-rows:  90px 70px 500px 200px 200px 2px 100px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "logo titulo titulo titulo busca "
+    "menu menu menu menu menu"
+    "grantexto  grantexto  grantexto  grantexto  grantexto "
+    "carnetex carnetex carnetex carnetex carnetex  "
+    "pastatex pastatex pastatex pastatex pastatex  "
+    "verduratex verduratex verduratex verduratex verduratex  "
+    "pie pie pie pie pie  ";
+    align-items: stretch; 
+     }
+ 
+    .imagengrande{
+      grid-area: granimagen;
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      display: none;
+
+    }
+
+    .imagencarnesec{
+      grid-area:carneimg ;
+      display: none;
+      justify-items: flex-start;
+      align-items: center;
+    background-color:rgb(190, 142, 235); 
+
+    }
+
+    .imgsec{
+      display: inline-block;
+      display: none; 
+
+    } 
+
+  
+}
+.subgrilla{
+  display: grid;
+grid-template-rows: 100px 100px;
+grid-template-columns:1 1 ;
+grid-template-areas: 
+"a b"
+"c d";
+
+
+}
