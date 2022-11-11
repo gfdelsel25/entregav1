@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>RECETAS PARA TODOS LOS DIAS</title>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" 
     rel="stylesheet"> 
@@ -21,51 +22,93 @@
         
 
             <div class="containerlogo">
-                <img height="85px" width="85px"  src="imagenes/logosolo.jpg" alt="">
+                <img class="imglogo" src="imagenes/logosolo.jpg" alt="">
              </div>
 
             <div class="containertitulo"> 
-                <div class="titulo"> 
+                <div> 
                     <h1> RECETAS PARA EL HOME OFFICE</h1>
                 </div>
             </div>
-            
+
             <div class="containerbusca">
-                <input type="buscar" placeholder="Bùsqueda">
+              <!-- <input type="buscar" placeholder="Bùsqueda"> -->
+              <form class="d-flex h-25 w-60 pe-0" role="search" >
+                <input class="form-control me-2 pe-0" type="search" placeholder="buscar" aria-label="Search">
+                <button class="btn btn-outline centrabusca" type="submit">Buscar</button>
+              </form>
             </div>
+          
+            
+            <!-- <div class="containerbusca">
+                <input class="buscador" type="buscar" placeholder="Buscar">
+            </div> -->
     
         <div class="menu">
-            <nav >
-              <ul>
-                <li> <a href="index.html"> <button type="button" class="btn btn-outline-success">Inicio</button> </a></li>
-                <li> <a href="secciones/carnesppal.html"><button type="button" class="btn btn-danger">Carnes</button></a> </li>
-                <li> <a href="secciones/pastasppal.html">  <button type="button" class="btn btn-secondary">Pastas</button> </a> </li>
-                <li> <a href="secciones/verdurasppal.html">  <button type="button" class="btn btn-success">Verduras</button> </a> </li>
+          <nav class="navbar navbar-expand-md p-0">
+          <div class="container-fluid " >
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../entregav1/index.html"><button type="button" class="btn btn-outline-danger shadow rounded pt-0 pb-0">Inicio</button></a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="../entregav1/secciones/carnesppal.html"><button type="button" class="btn btn-danger shadow rounded pt-0 pb-0">Carnes</button></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../entregav1/secciones/pastasppal.html"><button type="button" class="btn btn-secondary shadow  rounded pt-0 pb-0 ">Pastas</button></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../entregav1/secciones/verdurasppal.html"><button type="button" class="btn btn-success gshadow rounded pt-0 pb-0">Verduras</button></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../entregav1/secciones/tips.html"> <button type="button" class="btn btn-warning pt-0 pb-0">Tips</button></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../entregav1/secciones/registro.html"><button type="button" class="btn btn-primary pt-0 pb-0">Registrate</button></a>
+                </li>
+              </ul>
+              
+            </div>
+          </div>
+        </nav>
+
+            <!-- <nav >
+              <ul class="p-0 m-0">
+                <li> <a href="index.html"> <button type="button" class="btn btn-outline-success shadow rounded ">Inicio</button> </a></li>
+                <li> <a href="secciones/carnesppal.html"><button type="button" class="btn btn-danger shadow rounded ">Carnes</button></a> </li>
+                <li> <a href="secciones/pastasppal.html">  <button type="button" class="btn btn-secondary shadow  rounded ">Pastas</button> </a> </li>
+                <li> <a href="secciones/verdurasppal.html">  <button type="button" class="btn btn-success gshadow rounded ">Verduras</button> </a> </li>
                 <li> <a href="secciones/tips.html">  <button type="button" class="btn btn-warning">Tips</button> </a> </li>
                 <li> <a href="secciones/registro.html"> <button type="button" class="btn btn-primary">Registrate</button></a> </li>
               </ul>
-            </nav>
+            </nav> -->
           </div>
           
  
 
        
-<div class="textogrande">
-    <section class="ubicatexto">   
-        caja1Descubre el futuro del hosting con nuestro Smart Hosting
-        Smart Hosting optimizará y ajustará automáticamente tu página web 
-        para que sea mucho más rápida y se mejore el posicionamiento en los 
-        buscadores. Dispone de algoritmos de IA que analizan y ajustan tu web, 
-        mediante varias capas de caché, tecnología HTTP2 y de aceleración, para 
-        conseguir la mayor velocidad posible. Incluso los certificados SSL mejoran 
-        en tiempo de respuesta.s capas de caché, tecnología HTTP2 y de aceleración, para 
-        conseguir la mayor velocidad posible. Incluso los certificados SSL mejoran 
-        en tiempo de respuesta.s capas de caché, tecnología HTTP2 y de aceleración, para TXT
-        la mayor velocidad posible. Incluso los certificados SSL mejoran 
-        en tiempo de respuesta.s capas de caché, tecnología HTTP2 y de aceleración, para 
-        conseguir la mayor velocidad posible. Incluso los certificados SSL mejoran 
-        en tiempo de respuesta.s capas de caché, tecnología HTTP2 y de aceleración, para TXT
-    </section> 
+<div class="textogrande ">
+ 
+ <section class="ubicatexto ">   
+        La pandemia y la llegada del home office nos hizo cambiar del restaurante, 
+        el local de comida al peso o el tupper o el sanguchito por la comida en casa.
+        Pero esto implica que la comida que antes cocinaba otro ahora tenemos que prepararla
+        nosotros. 
+        Son recetas simples que tienen muy poco tiempo e preparación y no requieren
+        de conocimientos de cocina avanzados. La idea es comer platos sabrosos sin que sea 
+        necesario ser cheff ni tener gran exoeriencia en la cocina.
+        También, hemos procurado que todas las comidas utilicen componentes e ingredientes
+        naturales con pocos o ningún aditivo y sena bajos en grasas, azucares e hidratos
+        de carbono simples.
+        Así, estas recetas son aptas para dietas de reducción de peso, alimentación deportiva, 
+       reducción de colesterol o simplemete, para comer variado y saludable.
+        Las personas vegetarianas o veganas, pueden dejar de lado la sección carne y concentrarse
+        en las otras.  
+                   </section> 
 </div>    
 
 <div class="imagengrande">   
@@ -82,9 +125,8 @@
         </div>
 
         <div class="sectiontextosec">
-            CARNE CARNE CARNE CARNEcà vas a ver una lista de las mejores recetas para la cocina de todos los dìas. Vas a aprender a comprar los mejores &lt;
-        ingredientes y los secretos para lograr detalles especiales en tus platos. 
-        El arroz es para el verano pero tam
+            CARNE usamos cortes lo más magros posibles o los desgrasamos. Hay recetas de carne 
+            vacuna, pollo, cerdo y pescado
         </div>
      
 </div>
@@ -128,19 +170,38 @@
 
      <section class="sectiontextosec">
          
-        PASTAS: PASTASPASTASPASTASURASAcà vas a ver una lista de las mejores recetas para la cocina de todos los dìas. Vas a aprender a comprar los mejores &lt;
-        ingredientes y los secretos para lograr detalles especiales en tus platos. 
-        El arroz es para el verano pero tam
+        PASTAS: en cualquiera de las recetas el tipo de pasta usada y las salsas 
+        son intercambiables. Por ejemplo,se pueden combinar los ravioles con la salsa 
+        de la receta fideos.
      </section>
     
  <!-- </div>  -->
 </div>
 
 <div class="imagenpastasec">
- <div class="imgsec">
-
-  <img  src="imagenes/pasta1.jpeg" alt="carne">
- </div>
+  <div class="imgsec">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../entregav1/imagenes/pasta1.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../entregav1/imagenes/pasta2.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../entregav1/imagenes/pasta4.jpeg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
 </div>
  
 <!------------------------ VERDURAS---------------------------------------------------->
@@ -157,21 +218,37 @@
 
      <section class="sectiontextosec">
          
-        VERDURAS: VERDURASVERDURASVERDURASVERDURASAcà vas a ver una lista de las mejores recetas para la cocina de todos los dìas. Vas a aprender a comprar los mejores &lt;
-          ingredientes y los secretos para lograr detalles especiales en tus platos. 
-          El arroz es para el verano pero también para el resto del año. Las recetas que podemos preparar con este cereal son casi infinitas. <br>
-          Platos de arroz tanto dulces como salados, están presentes a lo largo del año en nuestras mesas. 
-          Hoy nos hemos puesto manos a la obra con un arroz con chipirones, de esos..............   
-     </section>
+        VERDURAS: Acá incluimos las recetas de vorduras cocidas junto con 
+        las de verdura cruda, es decir, las ensaladas. Algunos de estas preparaciones
+        pueden usarse como plato principal o como acompañamiento de las carnes o pastas    </section>
     
  <!-- </div>  -->
 </div>
 
 <div class="imagenverdurasec">
- <div class="imgsec">
-
-  <img   src="imagenes/pasta1.jpeg" alt="carne">
- </div>
+  <div class="imgsec">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../entregav1/imagenes/verduras1.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../entregav1/imagenes/verduras2.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../entregav1/imagenes/verduras3.jpeg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
 </div> 
 
 

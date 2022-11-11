@@ -11,9 +11,9 @@ html{font-size: 62,5%;}
 .grilla{
   display: grid;
   grid-template-rows:  90px 70px 500px 225px 225px 225px 100px;
-  grid-column: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr    ;
+  grid-template-columns: repeat (auto-fill,1fr ) ;
   grid-template-areas:
-  "logo logo titulo titulo titulo titulo titulo busca busca busca "
+  "logo logo logo titulo titulo titulo titulo busca busca busca "
   "menu menu menu menu menu menu menu menu menu menu "
   "grantexto  grantexto  grantexto  grantexto  granimagen granimagen granimagen granimagen granimagen granimagen "
   "carnetex carnetex carnetex carnetex  carneimg carneimg carneimg carneimg carneimg carneimg "
@@ -28,6 +28,11 @@ html{font-size: 62,5%;}
     /* border: solid black; */
     display: inline;
     background-color: blue;
+
+  }
+  .imglogo{
+    height: 85px;
+    width: 85px;
   }
   
   .containertitulo{
@@ -40,14 +45,26 @@ html{font-size: 62,5%;}
     /* border: solid black; */
   }
   
+
   .containerbusca{
     grid-area: busca;
-    display: flex;
     align-items: center;
+    align-content: center;
     justify-content: center;
+    display: flex;
+  
+    padding-right: 30px;   
     background-color: blue;
   }
+  .buscador{
+    width: 150px;
+  }
   
+  h1{
+    display: inline;
+    font-size: 28px;
+  }
+
   .menu{
     grid-area: menu;
     background-color: rgb(231, 223, 240);
@@ -70,14 +87,14 @@ html{font-size: 62,5%;}
   }
 
 
+
 .textogrande{
     grid-area: grantexto;
     display: flex;
     align-items:center;
     background-color: rgb(190, 142, 235);
     width: 100%;
-   
-        
+         
 
 }
 
@@ -123,7 +140,6 @@ height: 500px;
     /* border: solid black; */
     background-color:rgb(190, 142, 235); 
    
-
   }
 
 .textopastasec{
@@ -177,7 +193,7 @@ height: 500px;
      }
    
      .imgsec{
-      position:relative ;
+      /* position:relative ; */
       top: 30px;
       height: 159px;
       width: 259px;
@@ -203,13 +219,13 @@ height: 500px;
 
 .grillasec{
 display: grid;
-grid-template-rows:  80px 50px 70px 200px 380px 380px 380px 80px;
+grid-template-rows:  80px 50px 70px 210px 420px 420px 420px 80px;
 grid-template-columns: 1fr 1fr 1fr;
 grid-template-areas:
 "logo titulo busca"
 " menu menu menu"
 "titulosec titulosec titulosec"
-"lista lista lista"
+"lista lista1 lista2"
 "pri sec ter"
 "cuar quin sex"
 "sep oct nov"
@@ -233,15 +249,32 @@ grid-row-gap: 1px;
   display: flex;
  align-items: center;
  justify-content: center;
+ align-content: center;
   background-color: blue;
 }
 
-.containerbusca{
+.containerbuscasec{
+  grid-area: busca;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: blue;
+  padding-right: 30px;
+}
+.containerbuscareg{
   grid-area: busca;
   display: flex;
   align-items: center;
   justify-content: center;
+ align-content: center;
   background-color: blue;
+}
+.centrabusca{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 .header{
@@ -276,8 +309,12 @@ grid-row-gap: 1px;
     align-content: center;
     justify-content: center;
   }
+  .menureg{
 
-  .menusec nav li{
+    height: 70px;
+  }
+
+    .menusec nav li{
     display: inline;
     padding: 20px;
   }
@@ -288,9 +325,9 @@ grid-row-gap: 1px;
 
   }
 
-
-
-
+.color{
+  background-color: rgb(146, 132, 161);
+}
 
 
 
@@ -304,7 +341,7 @@ grid-row-gap: 1px;
   align-content: center;
   justify-content: center;
   /* background-color: cornflowerblue; */
-  background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+  background: linear-gradient(217deg, rgba(255, 204, 0, 0.773), rgba(255,0,0,0) 70.71%),
               linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
               linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
 
@@ -316,12 +353,27 @@ grid-row-gap: 1px;
   .listarecetas{
     grid-area: lista;
     display: flex;
-    background-color: blueviolet;
+    background-color: rgb(197, 161, 231);
     /* background: linear-gradient(217deg, rgba(70, 153, 18, 0.8), rgba(18, 34, 3, 0) 70.71%),
               linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
               linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%); */
   }
-
+  .listarecetas1{
+    grid-area: lista1;
+    display: flex;
+    background-color: rgb(197, 161, 231);
+    /* background: linear-gradient(217deg, rgba(70, 153, 18, 0.8), rgba(18, 34, 3, 0) 70.71%),
+              linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+              linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%); */
+  }
+  .listarecetas2{
+    grid-area: lista2;
+    display: flex;
+    background-color: rgb(197, 161, 231);
+    /* background: linear-gradient(217deg, rgba(70, 153, 18, 0.8), rgba(18, 34, 3, 0) 70.71%),
+              linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+              linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%); */
+  }
 
   .lista{
   height: 150px;
@@ -329,7 +381,7 @@ grid-row-gap: 1px;
   /* background-color: rgb(43, 29, 96); */
   /* border: solid black; */
   margin: 5px;
-  padding-top: 30px;
+  padding-top: 15px;
   padding-left: 40px;
   list-style: none;
 
@@ -348,6 +400,10 @@ grid-row-gap: 1px;
     color:white
   }
 
+  li{
+    padding: 0px;
+
+  }
 
 .comtainerlista{
   grid-area: lista;
@@ -369,8 +425,16 @@ grid-row-gap: 1px;
 
 }
 
+.listaingredientes{
+  list-style:none ;
+  padding-left: 40px;
+}
 
+.ingredientes{
+text-decoration:solid;
+padding-left: 40px;
 
+}
 /* -----------------Formato de los textos e imágenes de los */
 .textosec{
   height: 90px;
@@ -401,7 +465,8 @@ h3 a{
   align-items: center;
   grid-area: pri;
   /* background-color: blueviolet; */
-  background: linear-gradient( blueviolet, rgb(212, 195, 227)  );
+  background: linear-gradient(rgb(209, 189, 243),rgb(240, 239, 243)  );
+  border: solid rgb(248, 245, 243);
 
 }
 
@@ -409,11 +474,12 @@ h3 a{
 .sec{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 grid-area: sec;
-background: linear-gradient( blueviolet, rgb(212, 195, 227)  );
+background: linear-gradient(rgb(209, 189, 243),rgb(240, 239, 243)  );
 /* background-color: blueviolet; */
+border: solid rgb(248, 245, 243);
 
 }
 
@@ -423,7 +489,8 @@ background: linear-gradient( blueviolet, rgb(212, 195, 227)  );
   justify-content: center;
   align-items: center;
   grid-area: ter;
-  background: linear-gradient( blueviolet, rgb(212, 195, 227)  );
+  background: linear-gradient(rgb(209, 189, 243),rgb(240, 239, 243)  );
+  border: solid rgb(248, 245, 243);
   /* background-color: blueviolet; */
 }
 
@@ -434,7 +501,8 @@ background: linear-gradient( blueviolet, rgb(212, 195, 227)  );
   align-items: center;
 grid-area:cuar ;
 /* background-color: rgb(207, 194, 229); */
-background: linear-gradient(rgb(195, 176, 227),rgb(216, 210, 228)  );
+background: linear-gradient(rgb(209, 189, 243),rgb(240, 239, 243)  );
+border: solid rgb(248, 245, 243);
 }
 
 .quin{
@@ -444,7 +512,8 @@ background: linear-gradient(rgb(195, 176, 227),rgb(216, 210, 228)  );
   align-items: center;
   grid-area:quin ;
   background-color: rgb(207, 194, 229);
-  background: linear-gradient(rgb(195, 176, 227),rgb(216, 210, 228)  );
+  background: linear-gradient(rgb(209, 189, 243),rgb(240, 239, 243)  );
+  border: solid rgb(248, 245, 243);
 
 }
 
@@ -456,7 +525,8 @@ background: linear-gradient(rgb(195, 176, 227),rgb(216, 210, 228)  );
   align-items: center;
   grid-area:sex ;
   background-color: rgb(207, 194, 229);
-  background: linear-gradient(rgb(195, 176, 227),rgb(216, 210, 228)  );
+  background: linear-gradient(rgb(209, 189, 243),rgb(240, 239, 243)  );
+  border: solid rgb(248, 245, 243);
 
 }
 
@@ -468,6 +538,7 @@ background: linear-gradient(rgb(195, 176, 227),rgb(216, 210, 228)  );
   grid-area:sep ;
   background-color: rgb(222, 219, 227);
   background: linear-gradient(rgb(209, 189, 243),rgb(240, 239, 243)  );
+  border: solid rgb(248, 245, 243);
 }
 
 .oct{
@@ -478,6 +549,7 @@ background: linear-gradient(rgb(195, 176, 227),rgb(216, 210, 228)  );
   grid-area:oct ;
   background-color: rgb(222, 219, 227);
   background: linear-gradient(rgb(209, 189, 243),rgb(240, 239, 243)  );
+  border: solid rgb(248, 245, 243);
 }
 
 
@@ -489,6 +561,21 @@ background: linear-gradient(rgb(195, 176, 227),rgb(216, 210, 228)  );
   grid-area:nov ;
   background-color: rgb(222, 219, 227);
   background: linear-gradient(rgb(209, 189, 243),rgb(240, 239, 243)  );
+  border: solid rgb(248, 245, 243);
+}
+
+.imgpri{
+padding-top: 30px;
+
+}
+
+.subtitulosec{
+color: rgb(39, 28, 20);
+}
+
+.preparacion{
+  color: darkblue;
+  font-weight: bold;
 }
 
 .footer{
@@ -502,7 +589,7 @@ justify-content:space-between;
 
 }
 h5{
-font-size: 1.3pc;
+size: 1.3pc;
 color: brown;
 
 }
@@ -538,91 +625,7 @@ color: brown;
   }
 /* -------------------TIPS--------------------- */
 
-/* responsividad */
-/* ------------------------------------------ */
-@media screen and (max-with:768px) {
-  .grillatablet{
-    grid-template-rows:  90px 70px 500px 225px 225px 225px 100px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-    "logo titulo titulo titulo busca "
-    "menu menu menu menu menu"
-    "grantexto  grantexto  grantexto  grantexto  grantexto "
-    "carnetex carnetex carnetex carnetex carnetex  "
-    "pastatex pastatex pastatex pastatex pastatex  "
-    "verduratex verduratex verduratex verduratex verduratex  "
-    "pie pie pie pie pie  ";
-    align-items: stretch; 
-     }
- 
-    .imagengrande{
-      grid-area: granimagen;
-      display: flex;
-      align-items: center;
-      align-content: center;
-      justify-content: center;
-      display: none;
 
-    }
-
-    .imagencarnesec{
-      grid-area:carneimg ;
-      display: none;
-      background-color:rgb(190, 142, 235); 
-
-    }
-
-    .imgsec{
-      display: inline-block;
-      display: none; 
-
-    } 
- 
-}
-
-/* ----------------Celular---------------------------------- */
-@media screen and (max-device-with:500px) {
-  .grillatablet{
-    grid-template-rows:  90px 70px 500px 200px 200px 2px 100px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-    "logo titulo titulo titulo busca "
-    "menu menu menu menu menu"
-    "grantexto  grantexto  grantexto  grantexto  grantexto "
-    "carnetex carnetex carnetex carnetex carnetex  "
-    "pastatex pastatex pastatex pastatex pastatex  "
-    "verduratex verduratex verduratex verduratex verduratex  "
-    "pie pie pie pie pie  ";
-    align-items: stretch; 
-     }
- 
-    .imagengrande{
-      grid-area: granimagen;
-      display: flex;
-      align-items: center;
-      align-content: center;
-      justify-content: center;
-      display: none;
-
-    }
-
-    .imagencarnesec{
-      grid-area:carneimg ;
-      display: none;
-      justify-items: flex-start;
-      align-items: center;
-    background-color:rgb(190, 142, 235); 
-
-    }
-
-    .imgsec{
-      display: inline-block;
-      display: none; 
-
-    } 
-
-  
-}
 .subgrilla{
   display: grid;
 grid-template-rows: 100px 100px;
@@ -633,3 +636,187 @@ grid-template-areas:
 
 
 }
+/* registro */
+.backregistro{
+
+  background: linear-gradient( rgb(202, 157, 243), rgb(212, 195, 227)  );
+}
+
+.form{
+  padding-top: 20px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+}
+.camposformulario{
+display: flex;
+flex-direction: row;
+background: linear-gradient( blueviolet, rgb(212, 195, 227)  );
+
+}
+.res{
+  padding-top: 23px;
+}
+
+.containersubtituloreg{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  background: linear-gradient(110deg, rgba(255,0,0,0), rgba(255,0,0,.8) 70.71%),
+              linear-gradient(127deg, rgba(0,255,0,0), rgba(0,255,0,.8)  70.71%),
+              linear-gradient(217deg, rgba(0,0,255,0) , rgba(0,0,255,.8)  90.71%);
+
+  }
+.check{
+padding-right: 20px;
+padding-bottom: 20px;
+background: linear-gradient( blueviolet, rgb(212, 195, 227)  );
+
+}
+.colorfotos{
+background: linear-gradient( blueviolet, rgb(212, 195, 227)  );
+
+
+}
+
+/* responsividad */
+/* ------------------------------------------ */
+
+/* ----------------Celular---------------------------------- */
+
+@media screen and (max-width: 480px) {
+
+  .grilla{
+    display: grid;
+    grid-template-rows:  55px 70px 320px 215px 215px 215px 100px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "titulo"
+    "menu"
+    "grantexto"
+    "carnetex"
+    "verduratex"
+    "pie"
+    
+    ;
+  
+    }
+
+
+
+
+      .containertitulo{
+        grid-area: titulo;
+        display: flex;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      background-color: rgb(115, 255, 0) ;
+        /* border: solid black; */
+      }
+
+      h1{
+        font-size: 0.9em;
+
+      }
+   
+
+      
+      .imgsec{
+        /* position:relative ;
+        height: 110px;
+        width: 181px; */
+       display: none;
+      /* border: solid black; */
+
+    }
+    .imagengrande{
+      grid-area: granimagen;
+      display: none;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+     
+
+    }
+    .imggran{
+
+      width: 413px;
+    height: 320px;
+      
+    }
+
+      .textogrande{
+        grid-area: grantexto;
+        display: flex;
+        align-items:center;
+        background-color: rgb(238, 243, 239);
+        width: 100%;
+            
+
+    }  
+    .ubicatexto{
+
+      font-size: 10px;
+    }
+    .sectiontextosec{
+      font-size: 10px;
+      
+     }
+     .imglogo{
+      height: 55px;
+      width:55px;
+    }
+    .containerlogo{
+     height: 55px;
+          
+    }
+    .containertitulo{
+   height:55px;
+    }
+    .containerbusca{
+      grid-area: busca;
+      display: flex;
+      
+      width: 140px;
+      height: 55px;
+     
+    }
+.buscador{
+  width: 120px;
+  height: 18px;
+  margin-left: 30px;
+ 
+}
+
+}
+/* @media screen and (max-width: 985px) {
+
+  .ubicatexto{
+
+    font-size: 15px;
+  }
+  .textogrande{
+    grid-area: grantexto;
+    display: flex;
+    align-items:center;
+    background-color: rgb(84, 58, 14);
+    width: 100%;
+  }
+
+} */
+/* @media screen and (max-width: 957px) {
+
+  .ubicatexto{
+
+    font-size: 12px;
+  }
+  .textogrande{
+    grid-area: grantexto;
+    display: flex;
+    align-items:center;
+    background-color: rgb(30, 14, 84);
+    width: 100%;
+  }
+
+} */

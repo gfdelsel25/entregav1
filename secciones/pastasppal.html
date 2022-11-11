@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RECETAS PARA TODOS LOS DIAS</title>
-    <link rel="stylesheet" href="../estilo/estilo.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RECETAS PARA TODOS LOS DIAS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" 
+  rel="stylesheet"> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script>
+    $(document).ready(function(){
+      // Enable popovers everywhere
+        $('[data-bs-toggle="popover"]').popover({html:true});  
+    });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+   
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+ 
+ 
+  <link rel="stylesheet" href="../estilo/estilo.css">
 </head>
 
 <!-- ------------------------------------------------- -->
@@ -19,73 +35,171 @@
 
   <div class="containertitulo"> 
     <div>
-       <h2> RECETAS PARA EL HOME OFFICE</h2>
+       <h1> RECETAS PARA EL HOME OFFICE</h1>
     </div>
   </div>
   
-  <div class="containerbusca">
-    <input type="buscar" placeholder="Bùsqueda">
+  <div class="containerbuscasec">
+    <!-- <input type="buscar" placeholder="Bùsqueda"> -->
+    <form class="d-flex h-25 w-60 pe-0" role="search" >
+      <input class="form-control me-2 pe-0" type="search" placeholder="buscar" aria-label="Search">
+      <button class="btn btn-outline centrabusca" type="submit">Buscar</button>
+    </form>
   </div>
-
 
   <!-- MENU--------------------------------------------------------------------------->
   <div class="menusec">
-    <nav >
+
+    <nav class="navbar navbar-expand-md p-0 menureg" >
+      <div class="container-fluid " >
+        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html"><button type="button" class="btn btn-outline-danger shadow rounded pt-0 pb-0">Inicio</button></a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="../secciones/carnesppal.html"><button type="button" class="btn btn-danger shadow rounded pt-0 pb-0">Carnes</button></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../secciones/pastasppal.html"><button type="button" class="btn btn-secondary shadow  rounded pt-0 pb-0">Pastas</button></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../secciones/verdurasppal.html"><button type="button" class="btn btn-success gshadow rounded pt-0 pb-0">Verduras</button></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../secciones/tips.html"> <button type="button" class="btn btn-warning pt-0 pb-0">Tips</button></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="registro.html"><button type="button" class="btn btn-primary pt-0 pb-0">Registrate</button></a>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+    <!-- <nav >
       <ul>
         <li> <a href="../index.html"> Inicio </a> </li>
         <li> <a href="../secciones/carnesppal.html">Carnes</a> </li>
         <li> <a href="../secciones/pastasppal.html">  Pastas </a> </li>
         <li> <a href="../secciones/verdurasppal.html">  Verduras </a> </li>
         <li> <a href="../secciones/tips.html">  Tips </a> </li>
-        <li> <a href="../secciones/registro.html"> registrate</a> </li>
+        <li> <a href="../secciones/registro.html"> Registrate</a> </li>
       </ul>
-    </nav>
+    </nav> -->
   </div>
   
 
  
   <div class="containersubtitulo">
-    <h2>NUESTRAS PASTAS</h2>
+    <h1  >NUESTRAS PASTAS</h1>
   </div>
   
   <div class="listarecetas">
     <ul class="lista">
-      <li><a href="Pastasreceta1.html">Bife de chorizo a las finas hierbas</a></li>
-      <li><a href="·">Fideos con brocoli y cherries </a></li>
+      <li><a href="#">Ravioles de ricota</a></li>
+      <li><a href="·">Fideos con salsa de queso </a></li>
       <li><a href="·">Lasagna</a></li>
-      <li><a href="·">Ravioles </a></li>
+      <li><a href="·">Sorrentinos</a></li>
+      
     </ul>
   </div>
+  <div class="listarecetas1">
+    <ul class="lista">
+      <li><a href="·">Fideos con brócoli y albahaca</a></li>
+      <li><a href="·">Pizza de fideos</a></li>
+      <li><a href="·">Orecciene con vegetales</a></li>
+      <li><a href="·">Canelones</a></li>
 
+
+    </ul>
+  </div>
+  <div class="listarecetas2">
+    <ul class="lista">
+      <li><a href="·">furatti con bolognesa</a></li>
+
+    </ul>
+  </div>
 
 <!-- Fila 1--------------------------->
 <!-- fila 1 1 -->
 <div class="pri">
   
-  <h3>   <a href="#"> Receta Pasta 1</a>  </h3>
-  <div class="textosec">sopa caliente y sabrosa parece que recompone cuerpo y espíritu. 
-    Pero hacer una buena sopa casera, con mucho sabor pero ligera</div>
+  <h4 class="subtitulosec">   Ravioles de ricota </h4>
+  <button type="button" class="btn-lg btn p-0  preparacion" tabindex="0"  data-bs-trigger="focus" data-bs-toggle="popover"data-bs-placement="top"  title="Preparación" data-bs-content= "dsalkdsflkndsklnfldsnflkdsnflkndslknvlkdsvcldsndsnnvlkdsnvlks
+  jvdksnvjdsnvndslvnflnvlkfnvlkanfdlknvlfnvlanfvlkanfdv
+  dfjdnvjfknajnfkjvnnfdalvkfdnvlkanfdlknvlkfdnvñlknfdav
+  dnkjvnfkjanfvnalfnvfdvñkjafdnvñkjfdafdvfvfdbdabgbg
+  dkcnkjdncdskvnñfdkjgjlkfdlvfdlklmvñlfdnvfd
+  ndvkjfnvkjnkfdanvñfdnvkjafdnvlkadnvlkdan" >Preparación</button>
+  <!-- <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="Dismissible popover" data-bs-content="And here's some amazing content. It's very engaging. Right?">Descartar popover</a> -->
 
-  <div class="imgsec"> <img class="imgpri" src="../imagenes/pasta1.jpeg" alt="img"></div>
+  <button type="button" class="btn-lg btn p-0 text-primary" tabindex="0"  data-bs-trigger="focus" data-bs-toggle="popover" data-bs-placement="bottom" title="Ingredientes" data-bs-content= "dsalkdsflkndsklnfldsnflkdsnflkndslknvlkdsvcldsndsnnvlkdsnvlks
+    jvdksnvjdsnvndslvnflnvlkfnvlkanfdlknvlfnvlanfvlkanfdv
+    dfjdnvjfknajnfkjvnnfdalvkfdnvlkanfdlknvlkfdnvñlknfdav
+    dnkjvnfkjanfvnalfnvfdvñkjafdnvñkjfdafdvfvfdbdabgbg
+    dkcnkjdncdskvnñfdkjgjlkfdlvfdlklmvñlfdnvfd
+    ndvkjfnvkjnkfdanvñfdnvkjafdnvlkadnvlkdan" >Ingredientes</button>
+  <div class="textosec">
+    Cocinar este plato toma 20 minutos de preparación y una hora de cocción
+   
+</div>
+
+  <div class="imgsec"> <img class=" " src="../imagenes/pasta1.jpeg" alt="img"></div>
 
 </div>
 <!-- fila 1 2 -->
 <div class="sec">
-<h3>    <a href="#"> Receta Pasta 2</a>      </h3>
+  <h4 class="subtitulosec">   Fideos con salsa de queso  </h4>
+  <button type="button" class="btn-lg btn p-0  preparacion" tabindex="0"  data-bs-trigger="focus" data-bs-toggle="popover"data-bs-placement="top"  title="Preparación" data-bs-content= "dsalkdsflkndsklnfldsnflkdsnflkndslknvlkdsvcldsndsnnvlkdsnvlks
+  jvdksnvjdsnvndslvnflnvlkfnvlkanfdlknvlfnvlanfvlkanfdv
+  dfjdnvjfknajnfkjvnnfdalvkfdnvlkanfdlknvlkfdnvñlknfdav
+  dnkjvnfkjanfvnalfnvfdvñkjafdnvñkjfdafdvfvfdbdabgbg
+  dkcnkjdncdskvnñfdkjgjlkfdlvfdlklmvñlfdnvfd
+  ndvkjfnvkjnkfdanvñfdnvkjafdnvlkadnvlkdan" >Preparación</button>
  
-  <div class="textosec">sopa caliente y sabrosa parece que recompone cuerpo y espíritu. 
-    Pero hacer una buena sopa casera, con mucho sabor pero ligera</div>
 
-  <div class="imgsec"><img class="imgpri" src="../imagenes/pasta1.jpeg  " alt="img"> </div>
+  <button type="button" class="btn-lg btn p-0 text-primary" tabindex="0"  data-bs-trigger="focus" data-bs-toggle="popover" data-bs-placement="bottom" title="Ingredientes" data-bs-content= "dsalkdsflkndsklnfldsnflkdsnflkndslknvlkdsvcldsndsnnvlkdsnvlks
+    jvdksnvjdsnvndslvnflnvlkfnvlkanfdlknvlfnvlanfvlkanfdv
+    dfjdnvjfknajnfkjvnnfdalvkfdnvlkanfdlknvlkfdnvñlknfdav
+    dnkjvnfkjanfvnalfnvfdvñkjafdnvñkjfdafdvfvfdbdabgbg
+    dkcnkjdncdskvnñfdkjgjlkfdlvfdlklmvñlfdnvfd
+    ndvkjfnvkjnkfdanvñfdnvkjafdnvlkadnvlkdan" >Ingredientes</button>
+  <div class="textosec">
+    Cocinar este plato toma 20 minutos de preparación y una hora de cocción
+   
+</div>
+
+  <div class="imgsec"> <img class=" " src="../imagenes/pasta2.jpeg" alt="img"></div>
 
 </div>
 <!-- fila 1 3 -->
 <div class="ter">
-  <h3>   <a href="#"> Receta Pasta 3</a>  </h3>
-  <div class="textosec">sopa caliente y sabrosa parece que recompone cuerpo y espíritu. 
-    Pero hacer una buena sopa casera, con mucho sabor pero ligera</div>
+  <h4 class="subtitulosec">    Lasagna </h4>
+  <button type="button" class="btn-lg btn p-0  preparacion" tabindex="0"  data-bs-trigger="focus" data-bs-toggle="popover"data-bs-placement="top"  title="Preparación" data-bs-content= "dsalkdsflkndsklnfldsnflkdsnflkndslknvlkdsvcldsndsnnvlkdsnvlks
+  jvdksnvjdsnvndslvnflnvlkfnvlkanfdlknvlfnvlanfvlkanfdv
+  dfjdnvjfknajnfkjvnnfdalvkfdnvlkanfdlknvlkfdnvñlknfdav
+  dnkjvnfkjanfvnalfnvfdvñkjafdnvñkjfdafdvfvfdbdabgbg
+  dkcnkjdncdskvnñfdkjgjlkfdlvfdlklmvñlfdnvfd
+  ndvkjfnvkjnkfdanvñfdnvkjafdnvlkadnvlkdan" >Preparación</button>
+ 
 
-  <div class="imgsec"><img class="imgpri" src="../imagenes/pasta4.jpeg" alt="img"></div>
+  <button type="button" class="btn-lg btn p-0 text-primary" tabindex="0"  data-bs-trigger="focus" data-bs-toggle="popover" data-bs-placement="bottom" title="Ingredientes" data-bs-content= "dsalkdsflkndsklnfldsnflkdsnflkndslknvlkdsvcldsndsnnvlkdsnvlks
+    jvdksnvjdsnvndslvnflnvlkfnvlkanfdlknvlfnvlanfvlkanfdv
+    dfjdnvjfknajnfkjvnnfdalvkfdnvlkanfdlknvlkfdnvñlknfdav
+    dnkjvnfkjanfvnalfnvfdvñkjafdnvñkjfdafdvfvfdbdabgbg
+    dkcnkjdncdskvnñfdkjgjlkfdlvfdlklmvñlfdnvfd
+    ndvkjfnvkjnkfdanvñfdnvkjafdnvlkadnvlkdan" >Ingredientes</button>
+  <div class="textosec">
+    Cocinar este plato toma 20 minutos de preparación y una hora de cocción
+   
+</div>
+
+  <div class="imgsec"> <img class=" " src="../imagenes/pastas3.jpeg" alt="img"></div>
+
 </div>
 
 <!-- Fila 2--------------------------->
@@ -93,11 +207,27 @@
 <!-- fila 2 1 -->
 <div class="cuar">
 
-  <h3>   <a href="#"> Receta Pasta 4</a>  </h3>
-   <div class="textosec">sopa caliente y sabrosa parece que recompone cuerpo y espíritu. 
-    Pero hacer una buena sopa casera, con mucho sabor pero ligera</div>
+  <h4 class="subtitulosec">   Sorrentinos </h4>
+  <button type="button" class="btn-lg btn p-0  preparacion" tabindex="0"  data-bs-trigger="focus" data-bs-toggle="popover"data-bs-placement="top"  title="Preparación" data-bs-content= "dsalkdsflkndsklnfldsnflkdsnflkndslknvlkdsvcldsndsnnvlkdsnvlks
+  jvdksnvjdsnvndslvnflnvlkfnvlkanfdlknvlfnvlanfvlkanfdv
+  dfjdnvjfknajnfkjvnnfdalvkfdnvlkanfdlknvlkfdnvñlknfdav
+  dnkjvnfkjanfvnalfnvfdvñkjafdnvñkjfdafdvfvfdbdabgbg
+  dkcnkjdncdskvnñfdkjgjlkfdlvfdlklmvñlfdnvfd
+  ndvkjfnvkjnkfdanvñfdnvkjafdnvlkadnvlkdan" >Preparación</button>
+ 
 
-  <div class="imgsec"><img class="imgpri" src="../imagenes/pasta4.jpeg" alt="img"></div>
+  <button type="button" class="btn-lg btn p-0 text-primary" tabindex="0"  data-bs-trigger="focus" data-bs-toggle="popover" data-bs-placement="bottom" title="Ingredientes" data-bs-content= "dsalkdsflkndsklnfldsnflkdsnflkndslknvlkdsvcldsndsnnvlkdsnvlks
+    jvdksnvjdsnvndslvnflnvlkfnvlkanfdlknvlfnvlanfvlkanfdv
+    dfjdnvjfknajnfkjvnnfdalvkfdnvlkanfdlknvlkfdnvñlknfdav
+    dnkjvnfkjanfvnalfnvfdvñkjafdnvñkjfdafdvfvfdbdabgbg
+    dkcnkjdncdskvnñfdkjgjlkfdlvfdlklmvñlfdnvfd
+    ndvkjfnvkjnkfdanvñfdnvkjafdnvlkadnvlkdan" >Ingredientes</button>
+  <div class="textosec">
+    Cocinar este plato toma 20 minutos de preparación y una hora de cocción
+   
+</div>
+
+  <div class="imgsec"> <img class=" " src="../imagenes/pasta4.jpeg" alt="img"></div>
 
 </div>
 
@@ -105,30 +235,79 @@
 <!-- fila 2 2 -->
 <div class="quin">
 
-  <h3>   <a href="#"> Receta Pasta 5</a>  </h3>
-  <div class="textosec">sopa caliente y sabrosa parece que recompone cuerpo y espíritu. 
-    Pero hacer una buena sopa casera, con mucho sabor pero ligera</div>
+  <h4 class="subtitulosec">  Fideos con brócoli y albahaca  </h4>
+  <button type="button" class="btn-lg btn p-0  preparacion" tabindex="0"  data-bs-trigger="focus" data-bs-toggle="popover"data-bs-placement="top"  title="Preparación" data-bs-content= "dsalkdsflkndsklnfldsnflkdsnflkndslknvlkdsvcldsndsnnvlkdsnvlks
+  jvdksnvjdsnvndslvnflnvlkfnvlkanfdlknvlfnvlanfvlkanfdv
+  dfjdnvjfknajnfkjvnnfdalvkfdnvlkanfdlknvlkfdnvñlknfdav
+  dnkjvnfkjanfvnalfnvfdvñkjafdnvñkjfdafdvfvfdbdabgbg
+  dkcnkjdncdskvnñfdkjgjlkfdlvfdlklmvñlfdnvfd
+  ndvkjfnvkjnkfdanvñfdnvkjafdnvlkadnvlkdan" >Preparación</button>
+ 
 
-  <div class="imgsec"><img class="imgpri" src="../imagenes/pastas5.jpeg" alt="img"></div>
+  <button type="button" class="btn-lg btn p-0 text-primary" tabindex="0"  data-bs-trigger="focus" data-bs-toggle="popover" data-bs-placement="bottom" title="Ingredientes" data-bs-content= "dsalkdsflkndsklnfldsnflkdsnflkndslknvlkdsvcldsndsnnvlkdsnvlks
+    jvdksnvjdsnvndslvnflnvlkfnvlkanfdlknvlfnvlanfvlkanfdv
+    dfjdnvjfknajnfkjvnnfdalvkfdnvlkanfdlknvlkfdnvñlknfdav
+    dnkjvnfkjanfvnalfnvfdvñkjafdnvñkjfdafdvfvfdbdabgbg
+    dkcnkjdncdskvnñfdkjgjlkfdlvfdlklmvñlfdnvfd
+    ndvkjfnvkjnkfdanvñfdnvkjafdnvlkadnvlkdan" >Ingredientes</button>
+  <div class="textosec">
+    Cocinar este plato toma 20 minutos de preparación y una hora de cocción
+   
+</div>
+
+  <div class="imgsec"> <img class=" " src="../imagenes/pastas5.jpeg" alt="img"></div>
 
 </div>
 <!-- fila 2 3 -->
 <div class="sex">
-  <h3>   <a href="#"> Receta Pasta 6</a>  </h3>
-  <div class="textosec">sopa caliente y sabrosa parece que recompone cuerpo y espíritu. 
-    Pero hacer una buena sopa casera, con mucho sabor pero ligera</div>
+  <h4 class="subtitulosec">   Pizza de fideos  </h4>
+  <button type="button" class="btn-lg btn p-0  preparacion" tabindex="0"  data-bs-trigger="focus" data-bs-toggle="popover"data-bs-placement="top"  title="Preparación" data-bs-content= "dsalkdsflkndsklnfldsnflkdsnflkndslknvlkdsvcldsndsnnvlkdsnvlks
+  jvdksnvjdsnvndslvnflnvlkfnvlkanfdlknvlfnvlanfvlkanfdv
+  dfjdnvjfknajnfkjvnnfdalvkfdnvlkanfdlknvlkfdnvñlknfdav
+  dnkjvnfkjanfvnalfnvfdvñkjafdnvñkjfdafdvfvfdbdabgbg
+  dkcnkjdncdskvnñfdkjgjlkfdlvfdlklmvñlfdnvfd
+  ndvkjfnvkjnkfdanvñfdnvkjafdnvlkadnvlkdan" >Preparación</button>
+ 
 
-  <div class="imgsec"><img class="imgpri" src="../imagenes/pasta4.jpeg" alt="img"></div>
+  <button type="button" class="btn-lg btn p-0 text-primary" tabindex="0"  data-bs-trigger="focus" data-bs-toggle="popover" data-bs-placement="bottom" title="Ingredientes" data-bs-content= "dsalkdsflkndsklnfldsnflkdsnflkndslknvlkdsvcldsndsnnvlkdsnvlks
+    jvdksnvjdsnvndslvnflnvlkfnvlkanfdlknvlfnvlanfvlkanfdv
+    dfjdnvjfknajnfkjvnnfdalvkfdnvlkanfdlknvlkfdnvñlknfdav
+    dnkjvnfkjanfvnalfnvfdvñkjafdnvñkjfdafdvfvfdbdabgbg
+    dkcnkjdncdskvnñfdkjgjlkfdlvfdlklmvñlfdnvfd
+    ndvkjfnvkjnkfdanvñfdnvkjafdnvlkadnvlkdan" >Ingredientes</button>
+  <div class="textosec">
+    Cocinar este plato toma 20 minutos de preparación y una hora de cocción
+   
+</div>
+
+  <div class="imgsec"> <img class=" " src="../imagenes/pasta6.jpeg" alt="img"></div>
+
 </div>
 
 <!-- Fila 3--------------------------->
 <!-- fila 3 1 -->
 <div class="sep">
-  <h3>   <a href="#"> Receta Pasta 7</a>  </h3>
-  <div class="textosec">sopa caliente y sabrosa parece que recompone cuerpo y espíritu. 
-    Pero hacer una buena sopa casera, con mucho sabor pero ligera</div>
+  <h4 class="subtitulosec">   Orecciene con vegetales  </h4>
+  <button type="button" class="btn-lg btn p-0  preparacion" tabindex="0"  data-bs-trigger="focus" data-bs-toggle="popover"data-bs-placement="top"  title="Preparación" data-bs-content= "dsalkdsflkndsklnfldsnflkdsnflkndslknvlkdsvcldsndsnnvlkdsnvlks
+  jvdksnvjdsnvndslvnflnvlkfnvlkanfdlknvlfnvlanfvlkanfdv
+  dfjdnvjfknajnfkjvnnfdalvkfdnvlkanfdlknvlkfdnvñlknfdav
+  dnkjvnfkjanfvnalfnvfdvñkjafdnvñkjfdafdvfvfdbdabgbg
+  dkcnkjdncdskvnñfdkjgjlkfdlvfdlklmvñlfdnvfd
+  ndvkjfnvkjnkfdanvñfdnvkjafdnvlkadnvlkdan" >Preparación</button>
+ 
 
-  <div class="imgsec"><img class="imgpri" src="../imagenes/pastas5.jpeg" alt="img"></div>
+  <button type="button" class="btn-lg btn p-0 text-primary" tabindex="0"  data-bs-trigger="focus" data-bs-toggle="popover" data-bs-placement="bottom" title="Ingredientes" data-bs-content= "dsalkdsflkndsklnfldsnflkdsnflkndslknvlkdsvcldsndsnnvlkdsnvlks
+    jvdksnvjdsnvndslvnflnvlkfnvlkanfdlknvlfnvlanfvlkanfdv
+    dfjdnvjfknajnfkjvnnfdalvkfdnvlkanfdlknvlkfdnvñlknfdav
+    dnkjvnfkjanfvnalfnvfdvñkjafdnvñkjfdafdvfvfdbdabgbg
+    dkcnkjdncdskvnñfdkjgjlkfdlvfdlklmvñlfdnvfd
+    ndvkjfnvkjnkfdanvñfdnvkjafdnvlkadnvlkdan" >Ingredientes</button>
+  <div class="textosec">
+    Cocinar este plato toma 20 minutos de preparación y una hora de cocción
+   
+</div>
+
+  <div class="imgsec"> <img class=" " src="../imagenes/pastas5.jpeg" alt="img"></div>
 
 </div>
 
@@ -136,22 +315,55 @@
 <!-- fila 3 2 -->
 <div class="oct">
 
-  <h3>   <a href="#"> Receta Pasta 8</a>  </h3>
-  <div class="textosec">sopa caliente y sabrosa parece que recompone cuerpo y espíritu. 
-    Pero hacer una buena sopa casera, con mucho sabor pero ligera</div>
+  <h4 class="subtitulosec">  Canelones  </h4>
+  <button type="button" class="btn-lg btn p-0  preparacion" tabindex="0"  data-bs-trigger="focus" data-bs-toggle="popover"data-bs-placement="top"  title="Preparación" data-bs-content= "dsalkdsflkndsklnfldsnflkdsnflkndslknvlkdsvcldsndsnnvlkdsnvlks
+  jvdksnvjdsnvndslvnflnvlkfnvlkanfdlknvlfnvlanfvlkanfdv
+  dfjdnvjfknajnfkjvnnfdalvkfdnvlkanfdlknvlkfdnvñlknfdav
+  dnkjvnfkjanfvnalfnvfdvñkjafdnvñkjfdafdvfvfdbdabgbg
+  dkcnkjdncdskvnñfdkjgjlkfdlvfdlklmvñlfdnvfd
+  ndvkjfnvkjnkfdanvñfdnvkjafdnvlkadnvlkdan" >Preparación</button>
+ 
 
-  <div class="imgsec"><img class="imgpri" src="../imagenes/pasta1.jpeg" alt="img"></div>
+  <button type="button" class="btn-lg btn p-0 text-primary" tabindex="0"  data-bs-trigger="focus" data-bs-toggle="popover" data-bs-placement="bottom" title="Ingredientes" data-bs-content= "dsalkdsflkndsklnfldsnflkdsnflkndslknvlkdsvcldsndsnnvlkdsnvlks
+    jvdksnvjdsnvndslvnflnvlkfnvlkanfdlknvlfnvlanfvlkanfdv
+    dfjdnvjfknajnfkjvnnfdalvkfdnvlkanfdlknvlkfdnvñlknfdav
+    dnkjvnfkjanfvnalfnvfdvñkjafdnvñkjfdafdvfvfdbdabgbg
+    dkcnkjdncdskvnñfdkjgjlkfdlvfdlklmvñlfdnvfd
+    ndvkjfnvkjnkfdanvñfdnvkjafdnvlkadnvlkdan" >Ingredientes</button>
+  <div class="textosec">
+    Cocinar este plato toma 20 minutos de preparación y una hora de cocción
+   
+</div>
+
+  <div class="imgsec"> <img class=" " src="../imagenes/pastas3.jpeg" alt="img"></div>
+
 
 </div>
 
 <!-- fila 3 3 -->
 <div class="nov">
 
-  <h3>   <a href="#"> Receta Pasta 9</a>  </h3>
-  <div class="textosec">sopa caliente y sabrosa parece que recompone cuerpo y espíritu. 
-    Pero hacer una buena sopa casera, con mucho sabor pero ligera</div>
+  <h4 class="subtitulosec">   Futura receta  </h4>
+  <button type="button" class="btn-lg btn p-0  preparacion" tabindex="0"  data-bs-trigger="focus" data-bs-toggle="popover"data-bs-placement="top"  title="Preparación" data-bs-content= "dsalkdsflkndsklnfldsnflkdsnflkndslknvlkdsvcldsndsnnvlkdsnvlks
+  jvdksnvjdsnvndslvnflnvlkfnvlkanfdlknvlfnvlanfvlkanfdv
+  dfjdnvjfknajnfkjvnnfdalvkfdnvlkanfdlknvlkfdnvñlknfdav
+  dnkjvnfkjanfvnalfnvfdvñkjafdnvñkjfdafdvfvfdbdabgbg
+  dkcnkjdncdskvnñfdkjgjlkfdlvfdlklmvñlfdnvfd
+  ndvkjfnvkjnkfdanvñfdnvkjafdnvlkadnvlkdan" >Preparación</button>
+ 
 
-  <div class="imgsec"><img class="imgpri" src="../imagenes/pastas3.jpeg" alt="img"></div>
+  <button type="button" class="btn-lg btn p-0 text-primary" tabindex="0"  data-bs-trigger="focus" data-bs-toggle="popover" data-bs-placement="bottom" title="Ingredientes" data-bs-content= "dsalkdsflkndsklnfldsnflkdsnflkndslknvlkdsvcldsndsnnvlkdsnvlks
+    jvdksnvjdsnvndslvnflnvlkfnvlkanfdlknvlfnvlanfvlkanfdv
+    dfjdnvjfknajnfkjvnnfdalvkfdnvlkanfdlknvlkfdnvñlknfdav
+    dnkjvnfkjanfvnalfnvfdvñkjafdnvñkjfdafdvfvfdbdabgbg
+    dkcnkjdncdskvnñfdkjgjlkfdlvfdlklmvñlfdnvfd
+    ndvkjfnvkjnkfdanvñfdnvkjafdnvlkadnvlkdan" >Ingredientes</button>
+  <div class="textosec">
+    Cocinar este plato toma 20 minutos de preparación y una hora de cocción
+   
+</div>
+
+  <div class="imgsec"> <img class=" " src="../imagenes/pasta1.jpeg" alt="img"></div>
 
 </div>
 
@@ -162,13 +374,13 @@
 
   <div class="iconos">
 
-      <img class="iconored" src="../imagenes/facebook.png" alt="">
+      <img src="../imagenes/facebook.png" alt="">
   
   
-      <img class="iconored" src="../imagenes/whatsapp.png" alt="">
+      <img src="../imagenes/whatsapp.png" alt="">
       
       
-      <img class="iconored" src="../imagenes/instagram.png" alt="">
+      <img src="../imagenes/instagram.png" alt="">
   </div>
 
 </section>
@@ -181,6 +393,10 @@
 
 </div>
 <!-- cierre div de grilla -->
-
+<script>
+  $(document).ready(function(){
+      $('[data-bs-toggle="popover"]').popover();  
+  });
+  </script>
 
 </body>
