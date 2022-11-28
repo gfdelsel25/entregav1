@@ -27,6 +27,8 @@ html{font-size: 62,5%;}
     grid-area: logo;
     /* border: solid black; */
     display: inline;
+    background-color:#616A6B ;
+    /* background-color: blue; */
     background-color: blue;
 
   }
@@ -67,7 +69,9 @@ html{font-size: 62,5%;}
 
   .menu{
     grid-area: menu;
-    background-color: rgb(231, 223, 240);
+    /* background:   linear-gradient (360deg, rgb(17, 23, 24),rgb(89, 87, 98) )   ; */
+    background-color: rgb(145, 155, 156);
+    /* background-color: rgb(231, 223, 240); */
     display: flex;
     align-items: center;
     align-content: center;
@@ -83,6 +87,12 @@ html{font-size: 62,5%;}
   .menu nav li a{
   font-size: 20px;
   text-decoration: solid;
+
+  }
+
+  .colorbotoninicio{
+    color: white;
+    font-weight: bold;
 
   }
 
@@ -140,6 +150,914 @@ height: 500px;
     /* border: solid black; */
     background-color:rgb(190, 142, 235); 
    
+  }
+
+.textopastasec{
+    grid-area: pastatex;      
+    display: flex; 
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+    justify-items: center;
+    background-color: rgb(190, 142, 235);
+ 
+
+
+ }
+  .h1pastas{
+    font-size: 25px;
+  }
+
+ .imagenpastasec{
+    grid-area:pastaimg ;
+    display: flex;
+    justify-items: flex-start;
+    /* border: solid black; */
+    background-color:rgb(190, 142, 235); }
+
+   .textoverdurasec{
+    grid-area: verduratex;
+    display: flex; 
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+    justify-items: center;
+    background-color: rgb(190, 142, 235);
+
+    }
+
+   .imagenverdurasec{
+    grid-area:verduraimg ;
+    display: flex;
+    justify-items: flex-start;
+    background-color:rgb(190, 142, 235); }
+
+    .sectiontextosec{
+      margin-left: 50px;
+      margin-right: auto;
+      padding-right: 50px;
+      width:auto;
+      
+     }
+   
+     .linksec{
+      padding-left: 50px;
+      padding-bottom: 15px;
+      padding-top: 30px;
+   
+     }
+   
+     .imgsec{
+      /* position:relative ; */
+      top: 30px;
+      height: 159px;
+      width: 259px;
+     /* border: solid black; */
+  
+  }
+/* ------------------------PPAL------------------PPAL-------------------------------------- */
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+
+/* -------------------------------------------------------------------------------------- */
+
+
+
+
+.grillasec{
+display: grid;
+grid-template-rows:  80px 50px 70px 210px 420px 420px 420px 80px;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-areas:
+"logo titulo busca"
+" menu menu menu"
+"titulosec titulosec titulosec"
+"lista lista1 lista2"
+"pri sec ter"
+"cuar quin sex"
+"sep oct nov"
+"foot foot foot";
+grid-row-gap: 1px;
+
+
+}
+
+
+
+/* ------------------Fila superior encabezado */
+.containerlogo{
+  grid-area: logo;
+  display: flex;
+  background-color: blue;
+}
+
+.containertitulo{
+  grid-area: titulo;
+  display: flex;
+ align-items: center;
+ justify-content: center;
+ align-content: center;
+  background-color: blue;
+}
+
+.containerbuscasec{
+  grid-area: busca;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: blue;
+  padding-right: 30px;
+}
+.containerbuscareg{
+  grid-area: busca;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ align-content: center;
+  background-color: blue;
+}
+.centrabusca{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.header{
+  height: 50px;
+  width: 150px;
+
+  border: solid black;
+  font-size: 10px;
+  }
+
+
+  }
+
+  .buscador{
+  height: 20px;
+  width: 100px;
+  background-color: brown;
+  border: solid black;
+  }
+
+
+
+
+/* -----------------Menu paginas secundarias----------------------------------------- */
+
+
+  .menusec{
+    grid-area: menu;
+    /* background-color: rgb(231, 223, 240); */
+    /* background-color: rgb(145 155 156); */
+    background: linear-gradient(rgb(145, 156, 156), rgb(171, 184, 184));
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+  .menureg{
+
+    height: 70px;
+  }
+
+    .menusec nav li{
+    display: inline;
+    padding: 20px;
+  }
+
+  .menusec nav li a{
+  font-size: 20px;
+  text-decoration: solid;
+
+  }
+
+.color{
+  background-color: rgb(146, 132, 161);
+}
+
+
+
+
+/* -----------------Titulo secundario----------------------- */
+
+.containersubtitulo{
+  grid-area: titulosec;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  /* background-color: cornflowerblue; */
+  background: linear-gradient(217deg, rgba(139, 159, 154, 0.887), rgba(255,0,0,0) 70.71%),
+              linear-gradient(127deg, rgba(128, 147, 147, 0.8), rgba(0,255,0,0) 70.71%),
+              linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+
+  }
+
+
+/* ----------------bloque con lsta de recetas */
+
+  .listarecetas{
+    grid-area: lista;
+    display: flex;
+    background-color: rgb(197, 161, 231);
+    /* background: linear-gradient(217deg, rgba(70, 153, 18, 0.8), rgba(18, 34, 3, 0) 70.71%),
+              linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+              linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%); */
+  }
+  .listarecetas1{
+    grid-area: lista1;
+    display: flex;
+    background-color: rgb(197, 161, 231);
+    /* background: linear-gradient(217deg, rgba(70, 153, 18, 0.8), rgba(18, 34, 3, 0) 70.71%),
+              linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+              linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%); */
+  }
+  .listarecetas2{
+    grid-area: lista2;
+    display: flex;
+    background-color: rgb(197, 161, 231);
+    /* background: linear-gradient(217deg, rgba(70, 153, 18, 0.8), rgba(18, 34, 3, 0) 70.71%),
+              linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+              linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%); */
+  }
+
+  .lista{
+  height: 150px;
+  width: 300px;
+  /* background-color: rgb(43, 29, 96); */
+  /* border: solid black; */
+  margin: 5px;
+  padding-top: 15px;
+  padding-left: 40px;
+  list-style: none;
+
+  }
+
+
+  .lista li{
+  padding: 10px;
+  font-size: 18px;
+  padding: 5px;
+  /* border: solid black; */
+  }
+
+
+  .lista li a{
+    color:white
+  }
+
+  li{
+    padding: 0px;
+
+  }
+
+.comtainerlista{
+  grid-area: lista;
+
+}
+
+.cntainercarnepri{
+  grid-area: pricar;
+
+}
+
+.containercarnesec{
+  grid-area: seccar;
+
+
+}
+.containercarneter{
+  grid-area: tercar;
+
+}
+
+.listaingredientes{
+  list-style:none ;
+  padding-left: 40px;
+}
+
+.ingredientes{
+text-decoration:solid;
+padding-left: 40px;
+
+}
+/* -----------------Formato de los textos e imágenes de los */
+.textosec{
+  height: 90px;
+  width: 250px;
+  padding-top: 15px;
+/* background-color: blue; */
+/* border: solid black; */
+}
+
+.imgsec{
+  height: 194px;
+  width: 259px;
+/* background-color: rgb(4, 255, 0); */
+/* border: solid black; */
+}
+
+h3{color: aliceblue;}
+h3 a{
+  color: black;
+}
+
+/* -------------Formato de los cuadros */
+
+.pri{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area: pri;
+  /* background-color: blueviolet; */
+  background: linear-gradient(rgb(209, 189, 243),rgb(240, 239, 243)  );
+  border: solid rgb(248, 245, 243);
+
+}
+
+
+.sec{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+<<<<<<< HEAD
+  grid-area: sec;
+  background: linear-gradient(rgb(209, 189, 243),rgb(240, 239, 243)  );
+  /* background-color: blueviolet; */
+  border: solid rgb(248, 245, 243);
+=======
+grid-area: sec;
+background: linear-gradient(rgb(209, 189, 243),rgb(240, 239, 243)  );
+/* background-color: blueviolet; */
+border: solid rgb(248, 245, 243);
+
+>>>>>>> 51af12a205da3471202a488d70c3f313e013ce89
+}
+
+.ter{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area: ter;
+  background: linear-gradient(rgb(209, 189, 243),rgb(240, 239, 243)  );
+  border: solid rgb(248, 245, 243);
+  /* background-color: blueviolet; */
+}
+
+.cuar{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+grid-area:cuar ;
+/* background-color: rgb(207, 194, 229); */
+background: linear-gradient(rgb(209, 189, 243),rgb(240, 239, 243)  );
+border: solid rgb(248, 245, 243);
+}
+
+.quin{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area:quin ;
+  background-color: rgb(207, 194, 229);
+  background: linear-gradient(rgb(209, 189, 243),rgb(240, 239, 243)  );
+  border: solid rgb(248, 245, 243);
+
+}
+
+
+.sex{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area:sex ;
+  background-color: rgb(207, 194, 229);
+  background: linear-gradient(rgb(209, 189, 243),rgb(240, 239, 243)  );
+  border: solid rgb(248, 245, 243);
+
+}
+
+.sep{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area:sep ;
+  background-color: rgb(222, 219, 227);
+  background: linear-gradient(rgb(209, 189, 243),rgb(240, 239, 243)  );
+  border: solid rgb(248, 245, 243);
+}
+
+.oct{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area:oct ;
+  background-color: rgb(222, 219, 227);
+  background: linear-gradient(rgb(209, 189, 243),rgb(240, 239, 243)  );
+  border: solid rgb(248, 245, 243);
+}
+
+
+.nov{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area:nov ;
+  background-color: rgb(222, 219, 227);
+  background: linear-gradient(rgb(209, 189, 243),rgb(240, 239, 243)  );
+  border: solid rgb(248, 245, 243);
+}
+
+.imgpri{
+padding-top: 30px;
+
+}
+
+.subtitulosec{
+color: rgb(39, 28, 20);
+}
+
+.preparacion{
+  color: darkblue;
+  font-weight: bold;
+}
+
+.footer{
+grid-area: foot;
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: rgb(129, 210, 122);
+/* align-content: center; */
+justify-content:space-between;
+
+}
+h5{
+size: 1.3pc;
+color: brown;
+
+}
+.iconos{
+  display:flex;
+  width: 140px;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.footerppal{
+  grid-area: pie;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(129, 210, 122);
+  /* align-content: center; */
+  justify-content:space-between;
+  
+  }
+ .h5ppal{
+  font-size: 1.3pc;
+  color: brown;
+  
+  }
+  .iconosppal{
+    display:flex;
+    width: 140px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 10px;
+  }
+/* -------------------TIPS--------------------- */
+
+
+.subgrilla{
+  display: grid;
+grid-template-rows: 100px 100px;
+grid-template-columns:1 1 ;
+grid-template-areas: 
+"a b"
+"c d";
+
+
+}
+/* registro */
+.backregistro{
+
+  background: linear-gradient( rgb(202, 157, 243), rgb(212, 195, 227)  );
+}
+
+.form{
+  padding-top: 20px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+}
+.camposformulario{
+display: flex;
+flex-direction: row;
+background: linear-gradient( blueviolet, rgb(212, 195, 227)  );
+
+}
+.res{
+  padding-top: 23px;
+}
+
+.containersubtituloreg{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  background: linear-gradient(110deg, rgba(255,0,0,0), rgba(255,0,0,.8) 70.71%),
+              linear-gradient(127deg, rgba(0,255,0,0), rgba(0,255,0,.8)  70.71%),
+              linear-gradient(217deg, rgba(0,0,255,0) , rgba(0,0,255,.8)  90.71%);
+
+  }
+.check{
+padding-right: 20px;
+padding-bottom: 20px;
+background: linear-gradient( blueviolet, rgb(212, 195, 227)  );
+
+}
+.colorfotos{
+background: linear-gradient( blueviolet, rgb(212, 195, 227)  );
+
+
+}
+
+/* responsividad */
+/* ------------------------------------------ */
+
+/* ----------------Celular---------------------------------- */
+
+<<<<<<< HEAD
+@media screen and (max-width: 985px) {
+
+  .ubicatexto{
+
+    font-size: 15px;
+  }
+  .textogrande{
+    grid-area: grantexto;
+    display: flex;
+    align-items:center;
+    background-color: rgb(84, 58, 14);
+    width: 100%;
+  }
+
+} 
+
+@media screen and (max-width: 957px) {
+
+  .ubicatexto{
+
+    font-size: 12px;
+  }
+  .textogrande{
+    grid-area: grantexto;
+    display: flex;
+    align-items:center;
+    background-color: rgb(30, 14, 84);
+    width: 100%;
+  }
+
+} 
+
+@media screen and (max-width: 890px) {
+
+  .ubicatexto{
+
+    font-size: 10px;
+  }
+  .textogrande{
+    grid-area: grantexto;
+    display: flex;
+    align-items:center;
+    background-color: rgb(221, 219, 227);
+    width: 100%;
+  }
+
+} 
+
+
+
+=======
+>>>>>>> 51af12a205da3471202a488d70c3f313e013ce89
+@media screen and (max-width: 480px) {
+
+  .grilla{
+    display: grid;
+    grid-template-rows:  55px 70px 320px 215px 215px 215px 100px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "titulo"
+    "menu"
+    "grantexto"
+    "carnetex"
+    "verduratex"
+    "pie"
+    
+    ;
+  
+    }
+
+
+
+
+      .containertitulo{
+        grid-area: titulo;
+        display: flex;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      background-color: rgb(115, 255, 0) ;
+        /* border: solid black; */
+      }
+
+      h1{
+        font-size: 0.9em;
+
+      }
+   
+
+      
+      .imgsec{
+        /* position:relative ;
+        height: 110px;
+        width: 181px; */
+       display: none;
+      /* border: solid black; */
+
+    }
+    .imagengrande{
+      grid-area: granimagen;
+      display: none;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+     
+
+    }
+    .imggran{
+
+      width: 413px;
+    height: 320px;
+      
+    }
+
+      .textogrande{
+        grid-area: grantexto;
+        display: flex;
+        align-items:center;
+        background-color: rgb(238, 243, 239);
+        width: 100%;
+            
+
+    }  
+    .ubicatexto{
+
+<<<<<<< HEAD
+      font-size: 8px;
+    }
+    .sectiontextosec{
+      font-size: 8px;
+=======
+      font-size: 10px;
+    }
+    .sectiontextosec{
+      font-size: 10px;
+>>>>>>> 51af12a205da3471202a488d70c3f313e013ce89
+      
+     }
+     .imglogo{
+      height: 55px;
+      width:55px;
+    }
+    .containerlogo{
+     height: 55px;
+          
+    }
+    .containertitulo{
+   height:55px;
+    }
+    .containerbusca{
+      grid-area: busca;
+      display: flex;
+      
+      width: 140px;
+      height: 55px;
+     
+    }
+.buscador{
+  width: 120px;
+  height: 18px;
+  margin-left: 30px;
+ 
+}
+
+}
+<<<<<<< HEAD
+
+=======
+/* @media screen and (max-width: 985px) {
+
+  .ubicatexto{
+
+    font-size: 15px;
+  }
+  .textogrande{
+    grid-area: grantexto;
+    display: flex;
+    align-items:center;
+    background-color: rgb(84, 58, 14);
+    width: 100%;
+  }
+
+} */
+/* @media screen and (max-width: 957px) {
+
+  .ubicatexto{
+
+    font-size: 12px;
+  }
+  .textogrande{
+    grid-area: grantexto;
+    display: flex;
+    align-items:center;
+    background-color: rgb(30, 14, 84);
+    width: 100%;
+  }
+
+} */
+>>>>>>> 51af12a205da3471202a488d70c3f313e013ce89
+/*  */
+html{font-size: 62,5%;}
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+.grilla{
+  display: grid;
+  grid-template-rows:  90px 70px 500px 225px 225px 225px 100px;
+  grid-template-columns: repeat (auto-fill,1fr ) ;
+  grid-template-areas:
+  "logo logo logo titulo titulo titulo titulo busca busca busca "
+  "menu menu menu menu menu menu menu menu menu menu "
+  "grantexto  grantexto  grantexto  grantexto  granimagen granimagen granimagen granimagen granimagen granimagen "
+  "carnetex carnetex carnetex carnetex  carneimg carneimg carneimg carneimg carneimg carneimg "
+  "pastatex pastatex pastatex pastatex pastaimg pastaimg pastaimg pastaimg pastaimg pastaimg "
+  "verduratex verduratex verduratex verduratex verduraimg verduraimg verduraimg verduraimg verduraimg verduraimg "
+  "pie pie pie pie pie pie pie pie pie pie ";
+
+
+  }
+  .containerlogo{
+    grid-area: logo;
+    /* border: solid black; */
+    display: inline;
+    background-color:#0a58cab3 ;
+    /* background-color: blue; */
+
+  }
+  .imglogo{
+    height: 85px;
+    width: 85px;
+  }
+  
+  .containertitulo{
+    grid-area: titulo;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   align-content: center;
+    background-color: blue;
+    /* border: solid black; */
+  }
+  
+
+  .containerbusca{
+    grid-area: busca;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+  
+    padding-right: 30px;   
+    background-color: blue;
+  }
+  .buscador{
+    width: 150px;
+  }
+  
+  h1{
+    display: inline;
+    font-size: 25px;
+  }
+
+  .menu{
+    grid-area: menu;
+    background:   linear-gradient (180deg, rgb(145, 155, 156),rgb(215, 230, 232) )   ) ;
+    background-color: rgb(145, 155, 156);
+    /* background-color: rgb(231, 223, 240); */
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .menu nav li{
+    display: inline;
+    padding: 20px;
+    
+  }
+
+  .menu nav li a{
+  font-size: 20px;
+  text-decoration: solid;
+
+  }
+
+  .colorbotoninicio{
+    color: white;
+    font-weight: bold;
+
+  }
+
+
+.textogrande{
+    grid-area: grantexto;
+    display: flex;
+    align-items:center;
+    background-color: rgb(190, 142, 235);
+    width: 100%;
+         
+
+}
+
+
+.ubicatexto{
+    /* border: solid black; */
+    height:fit-content;
+    padding: 30px;
+}
+
+
+.imagengrande{
+    grid-area: granimagen;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color: rgb(190, 142, 235);
+}
+
+.imggran{
+width: 590px;
+height: 500px;
+
+}
+
+/* ------------------------------------------------------------------------------ */
+.textocarnesec{
+    grid-area: carnetex; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-start;
+    justify-items: center;
+    background-color: rgb(190, 142, 235);
+
+ }
+
+  
+  .imagencarnesec{
+    grid-area:carneimg;
+    display: flex;
+    justify-items: flex-start;
+    /* border: solid black; */
+    background-color:rgb(190, 142, 235);
   }
 
 .textopastasec{
@@ -243,15 +1161,15 @@ grid-row-gap: 1px;
   display: flex;
   background-color: blue;
 }
-
+/* 
 .containertitulo{
   grid-area: titulo;
   display: flex;
- align-items: center;
- justify-content: center;
- align-content: center;
-  background-color: blue;
-}
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  background-color: #0000fff5;
+} */
 
 .containerbuscasec{
   grid-area: busca;
@@ -474,13 +1392,12 @@ h3 a{
 .sec{
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-grid-area: sec;
-background: linear-gradient(rgb(209, 189, 243),rgb(240, 239, 243)  );
-/* background-color: blueviolet; */
-border: solid rgb(248, 245, 243);
-
+  grid-area: sec;
+  background: linear-gradient(rgb(209, 189, 243),rgb(240, 239, 243)  );
+  /* background-color: blueviolet; */
+  border: solid rgb(248, 245, 243);
 }
 
 .ter{
@@ -684,27 +1601,236 @@ background: linear-gradient( blueviolet, rgb(212, 195, 227)  );
 
 /* ----------------Celular---------------------------------- */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 985px) {
+
+  .ubicatexto{
+
+    font-size: 0.9rem;
+  }
+  .textogrande{
+    grid-area: grantexto;
+    display: flex;
+    align-items:center;
+    /* background-color: rgb(84, 58, 14); */
+    width: 100%;
+  }
+
+  .sectiontextosec{
+  font-size: 0.9rem;
+       }
+} 
+
+@media screen and (max-width: 957px) {
+
+  .ubicatexto{
+
+    font-size: 0.85rem;
+  }
+  .textogrande{
+    grid-area: grantexto;
+    display: flex;
+    align-items:center;
+    /* background-color: rgb(30, 14, 84); */
+    width: 100%;
+  }
+  .sectiontextosec{
+    font-size: 0.85rem;
+         }
+  
+} 
+
+@media screen and (max-width: 890px) {
+
+  .ubicatexto{
+
+    font-size: 0.8rem;
+  }
+  .textogrande{
+    grid-area: grantexto;
+    display: flex;
+    align-items:center;
+    background-color: rgb(221, 219, 227);
+    width: 100%;
+  }
+
+  .sectiontextosec{
+    font-size: 0.8rem;
+         }
+
+  h1{
+    font-size: 23px;
+  
+    }
+     
+} 
+
+
+@media screen and (max-width: 865px) {
 
   .grilla{
     display: grid;
-    grid-template-rows:  55px 70px 320px 215px 215px 215px 100px;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    "titulo"
-    "menu"
-    "grantexto"
-    "carnetex"
-    "verduratex"
-    "pie"
+    grid-template-rows:  90px 70px 500px 225px 225px 225px 100px;
+    grid-template-columns: repeat (auto-fill,1fr ) ;
+    grid-template-areas:
+    "logo titulo titulo titulo titulo titulo titulo busca busca busca "
+    "menu menu menu menu menu menu menu menu menu menu "
+    "grantexto  grantexto  grantexto  grantexto  grantexto granimagen granimagen granimagen granimagen granimagen "
+    "carnetex carnetex carnetex carnetex  carnetex carnetex carneimg carneimg carneimg carneimg "
+    "pastatex pastatex pastatex pastatex pastatex pastatex pastaimg pastaimg pastaimg pastaimg "
+    "verduratex verduratex verduratex verduratex verduratex verduratex verduraimg verduraimg verduraimg verduraimg "
+    "pie pie pie pie pie pie pie pie pie pie ";
+  
+  
+    }
+
+  .ubicatexto{
+
+    font-size: 0.7rem;
+  }
+  .textogrande{
+    grid-area: grantexto;
+    display: flex;
+    align-items:center;
+    background-color: rgb(221, 219, 227);
+    width: 100%;
+  }
+
+  .sectiontextosec{
+    font-size: 0.7rem;
+         }
+
+         .imggran{
+          width: 350px;
+          height: 450px;
+          
+          }
+          h1{
+            font-size: 17px;
     
-    ;
+          }
+       
+          .containerbusca{
+            grid-area: busca;
+            display: flex;
+            width: 240px;
+            height: 90px;
+            /* margin-right: 10px; */
+          }
+      .buscador{
+        width: 80px;
+        height: 18px;
+        margin-left: 10px;
+       }
+       .imgsec{
+        height: 100px;
+        width: 190px;
+      /* background-color: rgb(4, 255, 0); */
+      /* border: solid black; */
+      }
+} 
+
+
+@media screen and (max-width: 662px){
+
+  .grilla{
+    display: grid;
+    grid-template-rows:  90px 70px 500px 225px 225px 225px 100px;
+    grid-template-columns: repeat (auto-fill,1fr ) ;
+    grid-template-areas:
+    "logo titulo titulo titulo titulo titulo titulo titulo titulo busca "
+    "menu menu menu menu menu menu menu menu menu menu "
+    "grantexto  grantexto  grantexto  grantexto  grantexto grantexto grantexto grantexto granimagen granimagen "
+    "carnetex carnetex carnetex carnetex  carnetex carnetex carnetex carnetex carnetex carneimg "
+    "pastatex pastatex pastatex pastatex pastatex pastatex pastatex pastatex pastatex pastaimg "
+    "verduratex verduratex verduratex verduratex verduratex verduratex verduratex verduratex verduratex verduraimg "
+    "pie pie pie pie pie pie pie pie pie pie ";
+  
   
     }
 
 
+    .imgsec{
+      height: 100px;
+      width: 190px;
+    /* background-color: rgb(4, 255, 0); */
+    /* border: solid black; */
+    }
+
+    h1{
+      font-size: 15px;
+
+    }
+ 
+    .containerbusca{
+      grid-area: busca;
+      display: flex;
+      width: 240px;
+      height: 90px;
+      /* margin-right: 10px; */
+    }
+.buscador{
+  width: 80px;
+  height: 18px;
+  margin-left: 10px;
+ }
+ 
 
 
+}
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------- */
+@media screen and (max-width: 614px) {
+
+  /* .grilla{
+    display: grid;
+    grid-template-rows:  100px 100px 100px 100px 100px 100px 100px ;
+    grid-template-columns:  1fr ;
+    align-items: center;
+  justify-items: center;
+    grid-template-areas:
+    "titulo "
+    "menu"
+    "grantexto "
+    "carnetex " 
+
+    "pastatex"
+
+    "verduratex"
+
+     "pie ";
+    
+    ;
+  
+  } */
+
+  .grilla{
+    display: grid;
+     grid-template-rows:  55px 55px 200px 120px 130px 120px 130px 120px 135px 120px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "titulo titulo"
+    "menu menu"
+    "grantexto grantexto"
+    "carnetex carnetex"
+    "carneimg  carneimg"
+    "pastatex pastatex"
+    "pastaimg pastaimg  "
+    "verduratex verduratex"
+    "verduraimg verduraimg  "
+    "pie pie";
+    align-content: stretch;
+    justify-content: center;
+    justify-items: start;
+    }
       .containertitulo{
         grid-area: titulo;
         display: flex;
@@ -712,26 +1838,26 @@ background: linear-gradient( blueviolet, rgb(212, 195, 227)  );
       justify-content: center;
       align-content: center;
       background-color: rgb(115, 255, 0) ;
+      
+      width: 100%;
         /* border: solid black; */
       }
 
       h1{
-        font-size: 0.9em;
+        font-size: 15px;
 
       }
    
-
-      
+   
       .imgsec{
         /* position:relative ;
         height: 110px;
         width: 181px; */
-       display: none;
+    
       /* border: solid black; */
 
     }
     .imagengrande{
-      grid-area: granimagen;
       display: none;
       align-items: center;
       align-content: center;
@@ -739,13 +1865,7 @@ background: linear-gradient( blueviolet, rgb(212, 195, 227)  );
      
 
     }
-    .imggran{
-
-      width: 413px;
-    height: 320px;
-      
-    }
-
+    
       .textogrande{
         grid-area: grantexto;
         display: flex;
@@ -757,66 +1877,91 @@ background: linear-gradient( blueviolet, rgb(212, 195, 227)  );
     }  
     .ubicatexto{
 
-      font-size: 10px;
+      font-size: 0.65rem;
     }
-    .sectiontextosec{
-      font-size: 10px;
-      
-     }
+    
+     .sectiontextosec{
+       font-size: 0.65rem;
+       }
      .imglogo{
-      height: 55px;
-      width:55px;
+      display: none;      
     }
     .containerlogo{
      height: 55px;
+     display: none;
           
     }
     .containertitulo{
    height:55px;
     }
     .containerbusca{
+
       grid-area: busca;
       display: flex;
-      
-      width: 140px;
+      width: 400px;
       height: 55px;
+      display: none;
      
     }
 .buscador{
   width: 120px;
   height: 18px;
   margin-left: 30px;
- 
+ }
+.menu{
+  background-color: blue;
+  width: 100%;
+}
+.imagencarnesec{
+  grid-area:carneimg;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  background-color:rgb(190, 142, 235);
+}
+.imagenpastasec{
+  grid-area:pastaimg;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  background-color:rgb(190, 142, 235);
+}
+.imagenverdurasec{
+  grid-area:verduraimg;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  background-color:rgb(190, 142, 235);
 }
 
+.footerppal{
+  grid-area: pie;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(129, 210, 122);
+  /* align-content: center; */
+  justify-content:space-between;
+  
+  }
+ .h5ppal{
+  font-size: 1.1pc;
+  color: brown;
+  
+  }
+  .iconosppal{
+    display:flex;
+    width: 140px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 10px;
+  }
 }
-/* @media screen and (max-width: 985px) {
 
-  .ubicatexto{
-
-    font-size: 15px;
-  }
-  .textogrande{
-    grid-area: grantexto;
-    display: flex;
-    align-items:center;
-    background-color: rgb(84, 58, 14);
-    width: 100%;
-  }
-
-} */
-/* @media screen and (max-width: 957px) {
-
-  .ubicatexto{
-
-    font-size: 12px;
-  }
-  .textogrande{
-    grid-area: grantexto;
-    display: flex;
-    align-items:center;
-    background-color: rgb(30, 14, 84);
-    width: 100%;
-  }
-
-} */
